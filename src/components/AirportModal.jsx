@@ -14,12 +14,10 @@ const AirportModal = ({openModal,handleModel,handleDes}) => {
 
   useEffect(() => {
 
-    if (search != ""){
+
       setAirports(airportsData);
-    }
-    else{
-      setAirports([])
-    }
+
+ 
 
     axios.get('https://ipapi.co/json/')
       .then(response => {
