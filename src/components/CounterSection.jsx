@@ -8,9 +8,10 @@ const CounterSection = ({setPerson}) => {
         const newValues = [...tickets];
         newValues[index] = tickets[index] + 1;
         setTickets(newValues);
-        }
         const ticketSum = tickets.reduce((sum, ticket) => sum + ticket, 0);
         setPerson(ticketSum + 1)
+        }
+        
       };
 
      
@@ -20,9 +21,10 @@ const CounterSection = ({setPerson}) => {
             const newValues = [...tickets];
             newValues[index] = tickets[index] - 1;
             setTickets(newValues);
+            const ticketSum = tickets.reduce((sum, ticket) => sum + ticket, 0);
+            setPerson(ticketSum - 1)
         }
-        const ticketSum = tickets.reduce((sum, ticket) => sum + ticket, 0);
-        setPerson(ticketSum - 1)
+        
       };
 
 
