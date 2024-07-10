@@ -16,7 +16,7 @@ const AirportModal = ({openModal,handleModel,handleDes}) => {
 
 
       setAirports(airportsData);
-
+// some changes
  
 
     axios.get('https://ipapi.co/json/')
